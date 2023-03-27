@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230323 16:18:49.444" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="SuiteS23Ultra" source="C:\Projetos\BrowserStack-Robot\parallel\SuiteS23Ultra.robot">
+<test id="s1-s1-t1" name="Cenário 02: Subtrair dois numeros corretamente" line="13">
+<kw name="Dado que estou com meu device aberto" library="BDDpt-br" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que estou com meu device aberto">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>app=${APP_ID}</arg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>deviceName=Samsung Galaxy S23 Ultra</arg>
+<arg>name=Teste pelo Robot</arg>
+<arg>build=browserstack-robot-framework</arg>
+<arg>platformName=Android</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230323 16:18:50.034" endtime="20230323 16:19:15.416"/>
+</kw>
+<kw name="IMPLICIT WAIT" library="implicit-wait">
+<arg>15</arg>
+<status status="PASS" starttime="20230323 16:19:15.416" endtime="20230323 16:19:15.697"/>
+</kw>
+<status status="PASS" starttime="20230323 16:18:50.034" endtime="20230323 16:19:15.697"/>
+</kw>
+<status status="PASS" starttime="20230323 16:18:50.033" endtime="20230323 16:19:15.697"/>
+</kw>
+<status status="PASS" starttime="20230323 16:18:50.032" endtime="20230323 16:19:15.698"/>
+</kw>
+<kw name="E que estou na pagina da calculadora" library="BDDpt-br" sourcename="E ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que estou na pagina da calculadora" library="SuitTestCommon">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${btnMult}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230323 16:19:16.052" level="INFO">criteria is android_button_mult</msg>
+<status status="PASS" starttime="20230323 16:19:15.706" endtime="20230323 16:19:16.053"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btnMult}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230323 16:19:16.712" level="INFO">criteria is android_button_mult</msg>
+<status status="PASS" starttime="20230323 16:19:16.053" endtime="20230323 16:19:16.712"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:15.706" endtime="20230323 16:19:16.712"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:15.699" endtime="20230323 16:19:16.712"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:15.698" endtime="20230323 16:19:16.712"/>
+</kw>
+<kw name="Quando digito o numero 8 no primeiro campo" library="BDDpt-br" sourcename="Quando ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="digito o numero 8 no primeiro campo" library="SuitTestCommon">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${cmpFirstNumber}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230323 16:19:16.717" level="INFO">Clicking element 'xpath=//android.widget.EditText[@text='FIRST NUMBER']'.</msg>
+<msg timestamp="20230323 16:19:17.455" level="INFO">xpath criteria: //android.widget.EditText[@text='FIRST NUMBER']</msg>
+<status status="PASS" starttime="20230323 16:19:16.716" endtime="20230323 16:19:17.455"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${cmpFirstNumber}</arg>
+<arg>8</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230323 16:19:17.464" level="INFO">Typing text '8' into text field 'xpath=//android.widget.EditText[@text='FIRST NUMBER']'</msg>
+<msg timestamp="20230323 16:19:18.661" level="INFO">xpath criteria: //android.widget.EditText[@text='FIRST NUMBER']</msg>
+<status status="PASS" starttime="20230323 16:19:17.456" endtime="20230323 16:19:18.661"/>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
+a particular key, ex. `Done`. In Android, no parameters are used.</doc>
+<status status="PASS" starttime="20230323 16:19:18.662" endtime="20230323 16:19:19.445"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:16.715" endtime="20230323 16:19:19.445"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:16.713" endtime="20230323 16:19:19.445"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:16.712" endtime="20230323 16:19:19.445"/>
+</kw>
+<kw name="E digito o numero 2 no segundo campo" library="BDDpt-br" sourcename="E ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="digito o numero 2 no segundo campo" library="SuitTestCommon">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${cmpSecondNumber}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230323 16:19:19.450" level="INFO">Clicking element 'id=android_field_second_number'.</msg>
+<msg timestamp="20230323 16:19:21.214" level="INFO">criteria is android_field_second_number</msg>
+<status status="PASS" starttime="20230323 16:19:19.448" endtime="20230323 16:19:21.215"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${cmpSecondNumber}</arg>
+<arg>2</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230323 16:19:21.223" level="INFO">Typing text '2' into text field 'id=android_field_second_number'</msg>
+<msg timestamp="20230323 16:19:22.530" level="INFO">criteria is android_field_second_number</msg>
+<status status="PASS" starttime="20230323 16:19:21.216" endtime="20230323 16:19:22.531"/>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
+a particular key, ex. `Done`. In Android, no parameters are used.</doc>
+<status status="PASS" starttime="20230323 16:19:22.531" endtime="20230323 16:19:23.053"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:19.448" endtime="20230323 16:19:23.053"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:19.446" endtime="20230323 16:19:23.053"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:19.445" endtime="20230323 16:19:23.053"/>
+</kw>
+<kw name="E clico no simbolo de subtração" library="BDDpt-br" sourcename="E ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="clico no simbolo de subtração" library="SuitTestCommon">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btnSub}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230323 16:19:23.060" level="INFO">Clicking element 'id=android_button_sub'.</msg>
+<msg timestamp="20230323 16:19:24.036" level="INFO">criteria is android_button_sub</msg>
+<status status="PASS" starttime="20230323 16:19:23.058" endtime="20230323 16:19:24.036"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:23.058" endtime="20230323 16:19:24.037"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:23.054" endtime="20230323 16:19:24.038"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:23.053" endtime="20230323 16:19:24.038"/>
+</kw>
+<kw name="Entao me e retornado o resultado 6" library="BDDpt-br" sourcename="Entao ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="me e retornado o resultado 6" library="SuitTestCommon">
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${txtResult}</arg>
+<arg>6</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230323 16:19:24.059" level="INFO">Verifying element 'id=android_result_text' contains text '6'.</msg>
+<msg timestamp="20230323 16:19:24.927" level="INFO">criteria is android_result_text</msg>
+<status status="PASS" starttime="20230323 16:19:24.052" endtime="20230323 16:19:24.927"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:24.051" endtime="20230323 16:19:24.927"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:24.041" endtime="20230323 16:19:24.929"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:24.039" endtime="20230323 16:19:24.929"/>
+</kw>
+<kw name="Close app" library="SuitTestCommon" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20230323 16:19:24.930" endtime="20230323 16:19:25.583"/>
+</kw>
+<status status="PASS" starttime="20230323 16:19:24.929" endtime="20230323 16:19:25.584"/>
+</kw>
+<tag>ct-002</tag>
+<status status="PASS" starttime="20230323 16:18:50.032" endtime="20230323 16:19:25.584"/>
+</test>
+<status status="PASS" starttime="20230323 16:18:49.482" endtime="20230323 16:19:25.586"/>
+</suite>
+<status status="PASS" starttime="20230323 16:18:49.460" endtime="20230323 16:19:25.588"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">ct-002</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="SuiteS23Ultra">Suites.SuiteS23Ultra</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230323 16:18:50.020" level="ERROR">Error in file 'C:\Projetos\BrowserStack-Robot\parallel\SuiteOnePlus.robot' on line 6: Setting 'Test Teardown' is not allowed in resource file.</msg>
+<msg timestamp="20230323 16:18:50.020" level="ERROR">Error in file 'C:\Projetos\BrowserStack-Robot\common\SuitTestCommon.robot' on line 8: Error in file 'C:\Projetos\BrowserStack-Robot\parallel\SuiteOnePlus.robot' on line 12: Resource file with 'Test Cases' section is invalid.</msg>
+<msg timestamp="20230323 16:18:50.022" level="ERROR">Error in file 'C:\Projetos\BrowserStack-Robot\parallel\SuitePixel6.robot' on line 6: Setting 'Test Teardown' is not allowed in resource file.</msg>
+<msg timestamp="20230323 16:18:50.022" level="ERROR">Error in file 'C:\Projetos\BrowserStack-Robot\common\SuitTestCommon.robot' on line 9: Error in file 'C:\Projetos\BrowserStack-Robot\parallel\SuitePixel6.robot' on line 12: Resource file with 'Test Cases' section is invalid.</msg>
+<msg timestamp="20230323 16:18:50.024" level="ERROR">Error in file 'C:\Projetos\BrowserStack-Robot\parallel\SuiteS23Ultra.robot' on line 6: Setting 'Test Teardown' is not allowed in resource file.</msg>
+<msg timestamp="20230323 16:18:50.024" level="ERROR">Error in file 'C:\Projetos\BrowserStack-Robot\common\SuitTestCommon.robot' on line 10: Error in file 'C:\Projetos\BrowserStack-Robot\parallel\SuiteS23Ultra.robot' on line 12: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
