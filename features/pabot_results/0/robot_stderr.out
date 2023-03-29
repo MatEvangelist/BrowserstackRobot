@@ -1,2 +1,0 @@
-[ ERROR ] Error in file 'C:\Projetos\BrowserStack-Robot\common\SuitTestCommon.robot' on line 9: Error in file 'C:\Projetos\BrowserStack-Robot\parallel\SuitePixel6.robot' on line 12: Resource file with 'Test Cases' section is invalid.
-[ ERROR ] Error in file 'C:\Projetos\BrowserStack-Robot\common\SuitTestCommon.robot' on line 10: Error in file 'C:\Projetos\BrowserStack-Robot\parallel\SuiteS23Ultra.robot' on line 12: Resource file with 'Test Cases' section is invalid.
