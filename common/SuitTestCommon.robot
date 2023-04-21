@@ -4,15 +4,15 @@ Library     AppiumLibrary
 Library     implicit-wait.py
 Library     mark-test-status.py
 Library     manage-local-testing.py
-Resource        ../pages/CalculadoraPage.robot
+Resource    ../pages/CalculadoraPage.resource
 Resource    ../parallel/SuiteOnePlus.robot
 Resource    ../parallel/SuitePixel6.robot
 Resource    ../parallel/SuiteS23Ultra.robot
 
 *** Variables ***
-${USERNAME}=     mathewspereiraev_J3LT8Y
-${ACCESSKEY}=    wg6pGosTL5r7DjzL8qoz
-${REMOTE_URL}=  https://${USERNAME}:${ACCESSKEY}@hub-cloud.browserstack.com/wd/hub
+${USERNAME}=     mathewsevangelis_0KEu4c
+${ACCESSKEY}=    JcHVxckD3ATNkypKrt9Y
+${REMOTE_URL}=   https://${USERNAME}:${ACCESSKEY}@hub-cloud.browserstack.com/wd/hub
 
 *** Keywords ***
 #Common test keywords
@@ -32,6 +32,10 @@ Start Local testing
 
 Stop Local testing
     STOP LOCAL
+
+Loggin
+    [Arguments]     ${message}
+    Log    ${message}
 
 #Android test keywords
 
@@ -58,6 +62,6 @@ clico no simbolo de subtração
 
 ### Entao
 me e retornado o resultado 6
-    Element Should Contain Text     ${txtResult}    6
+    AppiumLibrary.Element Should Contain Text     ${txtResult}    6
 
 
