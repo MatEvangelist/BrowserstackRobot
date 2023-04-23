@@ -18,9 +18,12 @@ ${REMOTE_URL}=  https://${USERNAME_BROWSERSTACK}:${ACCESSKEY_BROWSERSTACK}@hub-c
 *** Keywords ***
 inicia app
     [Arguments]         ${DEVICE}
-    open application    app=${APP_ID}   remote_url=${REMOTE_URL}
-    ...                 deviceName=${DEVICE}    name=Teste Robot
-    ...                 build=browserstack-robot-framework  platformName=${ANDROID_PLATFORM_NAME}
+    open application    app=${APP_ID}   
+    ...                 remote_url=${REMOTE_URL}
+    ...                 deviceName=${DEVICE}    
+    ...                 name=Teste Robot
+    ...                 build=browserstack-robot-framework 
+    ...                 platformName=${ANDROID_PLATFORM_NAME}
     ...                 autoGrantPermissions=${True}
     IMPLICIT WAIT       15
 

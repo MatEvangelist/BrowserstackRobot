@@ -48,7 +48,6 @@ Entao o resultado obtido da soma é ${z}
     ${mysum}=    Set Test Variable    ${${first_number} + ${second_number}}
     AppiumLibrary.Element Should Contain Text    ${txtResult}    ${mysum}
     AppiumLibrary.Element Should Contain Text    ${txtResult}    ${RESULTADO}
-    Capture Page Screenshot
 
 ### ENTÃO
 Entao o resultado obtido da multiplicação é ${z}
@@ -56,5 +55,4 @@ Entao o resultado obtido da multiplicação é ${z}
     ${mymult}=    Set Test Variable    ${${first_number} * ${second_number}}
     AppiumLibrary.Element Should Contain Text    ${txtResult}    ${mymult}
     AppiumLibrary.Element Should Contain Text    ${txtResult}    ${RESULTADO}
-    Capture Page Screenshot
 

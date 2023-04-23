@@ -20,7 +20,7 @@ Close app
     close application
 
 Add Implicit Wait
-    [Arguments]    ${duration}
+    [Arguments]     ${duration}
     IMPLICIT WAIT   ${duration}
 
 Mark Test Status
@@ -35,25 +35,25 @@ Stop Local testing
 
 Loggin
     [Arguments]     ${message}
-    Log    ${message}
+    Log             ${message}
 
 #Android test keywords
 
 ### Dado
 que estou na pagina da calculadora
     Wait Until Page Contains Element    ${btnMult}
-    Wait Until Element Is Visible    ${btnMult}
+    Wait Until Element Is Visible       ${btnMult}
 
 ### Quando
 digito o numero 8 no primeiro campo
     Click Element    ${cmpFirstNumber}
-    Input Text    ${cmpFirstNumber}    8
+    Input Text       ${cmpFirstNumber}    8
     Hide Keyboard
 
 ### E
 digito o numero 2 no segundo campo
     Click Element    ${cmpSecondNumber}
-    Input Text    ${cmpSecondNumber}    2
+    Input Text       ${cmpSecondNumber}    2
     Hide Keyboard
 
 ### E
